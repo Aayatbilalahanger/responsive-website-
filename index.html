@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+<div class="wave"></div>
+<nav>
+    <div class="logo">
+        AAYAT
+    </div>
+    <div class="menu">
+        <a href="#">HOME</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Features</a>
+        <a href="#">contact</a>
+        <img src="images/menu.png" alt="" hidden = "" id="toggle">
+
+
+
+    </div>
+</nav>
+<div class="container">
+    <div class="left">
+        <h1>WELCOME TO OUR CHANNEL EASY TUT</h1>
+        <p>in this channel we upload coding related videos </p>
+        <button>contact</button> <br>
+        <img src="images/icon.png" alt="" width="100px">
+    </div>
+    <div class="right">
+        <img src="images/1691735764097-removebg-preview (1).png" alt="">
+    </div>
+</div>
+
+<div id="sidenav">
+    <a href="#">HOME</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Features</a>
+        <a href="#">contact</a>
+</div>
+
+    </header>
+    <script>
+    var menu =  document.getElementById("toggle");
+    var sidenav = document.getElementById("sidenav");
+    sidenav.style.width = "0px";
+    menu.onclick = function(){
+        if(sidenav.style.width == "0px"){
+            sidenav.style.width ="100%";
+        }
+        else{
+            sidenav.style.width = "0px";
+
+        }
+    }
+    </script>
+</body>
+</html>
